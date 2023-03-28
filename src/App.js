@@ -5,12 +5,14 @@ import butcherPigImage from './assets/butcherPig.jpeg'
 const App = () => {
 
   // ACTION ITEM: to make the development process easier there are some preassigned words in the input field, when you are ready for your full user experience delete the test words passed to useState and pass an empty string
-  const [userInput, setUserInput] = useState("apple through queen squeal fry fluent")
+  const [userInput, setUserInput] = useState("")
   const [inputTranslated, setInputTranslated] = useState("")
+
+  // Pseudo: Create a function named myPigLatinCodeHere to see words beginning with a vowel translated to add "way" at the end. Create a variable/object that holds all the vowels. Iterate over the string input. Check if the first character of the string is a vowel use a comparative statement. If true, then return the string input with "way" at the end.
+
 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
   const myPigLatinCodeHere = () => {
-
     // NO MODIFICATION NEEDED: the variable "arrayOfUserInput" will contain the text input from the user split into an array of words
     const arrayOfUserInput = userInput.split(" ")
     console.log("arrayOfUserInput:", arrayOfUserInput)
@@ -32,13 +34,23 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+      if (eachWord[0] === vowelsArray[0]) {
+        return eachWord + "way"
+      } 
+      // else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] === "q") {
+      //   return eachWord.slice(eachWord.indexOf("u")+1) + eachWord.slice(0, eachWord.indexOf("u")+1) + "ay"
+      // } else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] !== "q") {
+      //   return eachWord.slice(eachWord.indexOf("u")) + eachWord.slice(0, eachWord.indexOf("u")) + "ay"
+      // } else {
+      //   return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
+      // }
 
-    
-
-      // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord
     })
 
+    // ACTION ITEM: this return will be the output of your Pig Latin'd code
+    // FIX: commented out the following line which was causing a syntax error
+    // return eachWord
+    
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
@@ -49,7 +61,7 @@ const App = () => {
 
   // ACTION ITEM: this method restarts the game by setting the original state, when you are ready for your full user experience delete the test words in setUserInput and pass an empty string
   const restartGame = () => {
-    setUserInput("apple through queen squeal fry fluent")
+    setUserInput("")
     setInputTranslated("")
   }
 
@@ -93,4 +105,18 @@ const App = () => {
   )
 }
 
+
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
