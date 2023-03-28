@@ -37,13 +37,14 @@ const App = () => {
       if (eachWord[0] === vowelsArray[0]) {
         return eachWord + "way"
       } 
-      // else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] === "q") {
-      //   return eachWord.slice(eachWord.indexOf("u")+1) + eachWord.slice(0, eachWord.indexOf("u")+1) + "ay"
-      // } else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] !== "q") {
-      //   return eachWord.slice(eachWord.indexOf("u")) + eachWord.slice(0, eachWord.indexOf("u")) + "ay"
-      // } else {
-      //   return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
-      // }
+      else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] === "q") {
+        return eachWord.slice(eachWord.indexOf("u")+1) + eachWord.slice(0, eachWord.indexOf("u")+1) + "ay"
+      } else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] !== "q") {
+        return eachWord.slice(eachWord.indexOf("u")) + eachWord.slice(0, eachWord.indexOf("u")) + "ay"
+      } 
+        // else {
+        //   return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
+        // }
 
     })
 
