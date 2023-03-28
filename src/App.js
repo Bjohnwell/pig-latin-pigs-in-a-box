@@ -42,9 +42,9 @@ const App = () => {
       } else if (vowelsArray[0] === "u" && eachWord[eachWord.indexOf("u")-1] !== "q") {
         return eachWord.slice(eachWord.indexOf("u")) + eachWord.slice(0, eachWord.indexOf("u")) + "ay"
       } 
-        // else {
-        //   return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
-        // }
+        else {
+          return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
+        }
 
     })
 
