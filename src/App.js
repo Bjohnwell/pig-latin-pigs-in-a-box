@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import butcherPigImage from './assets/butcherPig.jpeg'
+import butcherPigImage from './assets/cubimal-npc-ilmenskiejones.png'
 
 const App = () => {
 
@@ -101,7 +101,7 @@ const App = () => {
         </div>
         <p>{inputTranslated}</p>
       </div>
-      <footer>&copy; 2022 | Coded by: Your Names Here!</footer>
+      <footer>&copy; 2022 | Coded by: Evelyn, James, Brandon</footer>
     </div>
   )
 }
