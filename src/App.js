@@ -49,8 +49,6 @@ const App = () => {
     })
 
     // ACTION ITEM: this return will be the output of your Pig Latin'd code
-    // FIX: commented out the following line which was causing a syntax error
-    // return eachWord
     
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
@@ -86,7 +84,7 @@ const App = () => {
           alt="pig with butcher cut names in pig latin"
           className="butcher-pig-image"
         />
-
+<p>{inputTranslated}</p>
         <div className="input-section">
           <h4>Enter phrase to be translated:</h4>
           <input
@@ -99,7 +97,7 @@ const App = () => {
           <button onClick={setUpPreventDefault}>Submit</button>
           <button onClick={restartGame}>Clear</button>
         </div>
-        <p>{inputTranslated}</p>
+        
       </div>
       <footer>&copy; 2022 | Coded by: Evelyn, James, Brandon</footer>
     </div>
