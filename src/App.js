@@ -99,7 +99,7 @@ const App = () => {
         </div>
         
       </div>
-      <footer>&copy; 2022 | Coded by: Evelyn, James, Brandon</footer>
+      <footer>&copy; 2023 | Coded by: Evelyn, James, Brandon</footer>
     </div>
   )
 }
